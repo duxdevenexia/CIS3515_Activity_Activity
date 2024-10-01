@@ -28,7 +28,8 @@ class MainActivity : AppCompatActivity() {
             // TODO Step 2: Implement lambda body to launch new activity and pass value
             adapter = TextSizeAdapter(textSizes){
 
-                val intent = Intent(this@MainActivity, TextSizeAdapter::class.java)
+
+                val intent = Intent(this@MainActivity, DisplayActivity::class.java)
                 startActivity(intent)   // startActivity()
 
             }
